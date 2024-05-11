@@ -39,6 +39,11 @@ Search for companies in Glassdoor:
 - Parameters: `None`
 - Returns: `JSON data of companies matching the search query`
 
+## RapidAPI Link
+
+Access the Real-Time Glassdoor Data API on RapidAPI:
+[Real-Time Glassdoor Data](https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-glassdoor-data/details)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
