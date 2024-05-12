@@ -1,12 +1,18 @@
-from flask import Flask
+"""This Script Fetches Data From RapidAPI.
+This script defines routes to fetch data from the Real-Time Glassdoor Data API hosted on RapidAPI. 
+For more information, refer to the documentation at: https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-glassdoor-data/details.
+"""
+
+from flask import Blueprint
 import requests
 import os
 import csv
 from dotenv import load_dotenv
+from typing import Any, Literal
 
 load_dotenv()
 
-app = Flask(__name__)
+server_app = Blueprint("server", __name__)
 
 url = os.getenv("URL")
 
@@ -17,8 +23,14 @@ headers = {
 }
 
 
-@app.route("/search/")
-def company_search():
+@server_app.route("/search/")
+def company_search() -> (
+    Any
+    | Literal[
+        "No valid data received from the Glassdoor API.",
+        "No companies found in the Glassdoor API response.",
+    ]
+):
     """Return the data from Glassdoor API company search."""
     querystring = {"query": "goo", "limit": "10"}
     response = requests.get(url, headers=headers, params=querystring)
@@ -48,9 +60,3 @@ def company_search():
             writer.writerow(row)
 
     return response.json()
-
-
-if __name__ == "__main__":
-    """Create a simple web server that returns the data from Glassdoor API."""
-    app.run()
-    debug = True
