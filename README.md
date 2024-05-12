@@ -25,10 +25,8 @@ pip install -r requirements/base.txt
 Start the Flask server, run the following command to start the Flask server:
 
 ```bash
-python server/server.py
+python run.py
 ```
-
-The server will start locally at `http://127.0.0.1:5000/search/`
 
 ## Endpoints
 
