@@ -25,7 +25,7 @@ pip install -r requirements/base.txt
 Start the Flask server, run the following command to start the Flask server:
 
 ```bash
-python run.py
+python server.py
 ```
 
 ## Endpoints
