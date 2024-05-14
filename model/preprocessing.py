@@ -42,8 +42,13 @@ def read_csv() -> str:
 
     data = pd.read_csv("data/glassdoor_company.csv")
 
-    info = data.info()
-    info_str = str(info)
+    # info = data.info()
+    # info_str = str(info)
     # print("data info:", info_str)
-
-    return render_template("pages/tables.html")
+    
+    cols = data.columns.tolist()
+    rows = data.values.tolist()
+    description_index = cols.index("company_description")
+    return render_template(
+        "tables.html", cols=cols, rows=rows, description_index=description_index
+    )
