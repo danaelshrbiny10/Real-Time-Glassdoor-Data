@@ -37,6 +37,8 @@ Search for companies in Glassdoor:
 - Parameters: `None`
 - Returns: `JSON data of companies matching the search query`
 
+You can use this [postman collection](https://restless-space-444311.postman.co/workspace/Real-Time-Glassdoor-Data~b76db5d4-8dbf-4080-902c-fd2e573bbf3f/collection/13841690-10a55905-2dd2-4854-9b42-437c6ca7e3f8?action=share&creator=13841690) to learn more about the API usage
+
 ## RapidAPI Link
 
 Access the Real-Time Glassdoor Data API on RapidAPI:

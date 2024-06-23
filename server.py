@@ -5,7 +5,6 @@ It serves as the main entry point for the project, allowing access to various ro
 
 from flask import Flask
 from api.search import search_app
-# from model.preprocessing import preprocessing_app
 from database.models import app_db, configure_db
 
 
@@ -14,7 +13,6 @@ app = Flask(__name__)
 
 # Register blueprints
 app.register_blueprint(search_app)
-# app.register_blueprint(preprocessing_app)
 app.register_blueprint(app_db)
 
 # Configure SQLAlchemy

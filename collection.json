@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "c5dcf4bd-35ed-44d4-9e8e-ba513a0e5cdf",
+		"name": "Real-Time-Glassdoor-Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13841690"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/search/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"search",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/search/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"search",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.3 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jun 2024 22:27:45 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7096"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"company_description\": \"Goo.com Srl is a dynamic Italian Company. We are IT Solution Provider, System Integrator and, above all, IDEAS DEVELOPER! We provide: - IT **TOP** Consultancy. - Software Engineering, Software Architecture and Hardware Engineering services. - Web and Mobile Responsive development. - Consolidate and Certified SysAdmin experience. - Software ad hoc. Our Customers and Partners: Have a look here: http://goodotcom.com/pages/chi_siamo Our Story: A long time ago in a galaxy far, far away, our first company SOPRIT was funded. Back in the 1999 we took the challenge to support our Customers in the process of integration and optimisation of their resources. We developed customised solutions for their security systems and automation. After years of experience we founded Goo.com to offer technologically advanced solutions with the highest standards of quality and reliability.\",\n            \"company_id\": 1145391,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Goo-Com-EI_IE1145391.11,18.htm\",\n            \"company_size\": \"1 to 50 Employees\",\n            \"company_size_category\": \"SMALL\",\n            \"headquarters_location\": \"Trezzano sul Naviglio, Italy\",\n            \"industry\": \"Enterprise Software & Network Solutions\",\n            \"job_count\": 0,\n            \"logo\": \"https://media.glassdoor.com/sql/1145391/goo-com-squarelogo-1458658483643.png\",\n            \"name\": \"Goo.Com\",\n            \"rating\": 4.3,\n            \"review_count\": 2,\n            \"salary_count\": 2\n        },\n        {\n            \"company_description\": null,\n            \"company_id\": 8070755,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Stichting-GOO-EI_IE8070755.11,24.htm\",\n            \"company_size\": \"Unknown\",\n            \"company_size_category\": \"UNKNOWN\",\n            \"headquarters_location\": \"Gemert, Netherlands\",\n            \"industry\": null,\n            \"job_count\": 5,\n            \"logo\": null,\n            \"name\": \"Stichting GOO\",\n            \"rating\": 0,\n            \"review_count\": 0,\n            \"salary_count\": 0\n        },\n        {\n            \"company_description\": null,\n            \"company_id\": 939648,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Goo-Goo-Express-Wash-EI_IE939648.11,31.htm\",\n            \"company_size\": \"1 to 50 Employees\",\n            \"company_size_category\": \"SMALL\",\n            \"headquarters_location\": \"Chattanooga, GA\",\n            \"industry\": \"Vehicle Repair & Maintenance\",\n            \"job_count\": 0,\n            \"logo\": \"https://media.glassdoor.com/sql/939648/goo-goo-express-wash-squarelogo-1562581717382.png\",\n            \"name\": \"Goo-Goo Express Wash\",\n            \"rating\": 2.8,\n            \"review_count\": 27,\n            \"salary_count\": 47\n        },\n        {\n            \"company_description\": null,\n            \"company_id\": 3651112,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Black-Goo-EI_IE3651112.11,20.htm\",\n            \"company_size\": \"1 to 50 Employees\",\n            \"company_size_category\": \"SMALL\",\n            \"headquarters_location\": \"Tring, United Kingdom\",\n            \"industry\": null,\n            \"job_count\": 0,\n            \"logo\": \"https://media.glassdoor.com/sql/3651112/black-goo-squarelogo-1663594570619.png\",\n            \"name\": \"Black Goo\",\n            \"rating\": 3.6,\n            \"review_count\": 7,\n            \"salary_count\": 18\n        },\n        {\n            \"company_description\": null,\n            \"company_id\": 1895285,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Let-s-Goo-Social-EI_IE1895285.11,27.htm\",\n            \"company_size\": \"1 to 50 Employees\",\n            \"company_size_category\": \"SMALL\",\n            \"headquarters_location\": \"Singapore, Singapore\",\n            \"industry\": \"Advertising & Public Relations\",\n            \"job_count\": 6,\n            \"logo\": \"https://media.glassdoor.com/sql/1895285/let-s-goo-social-squarelogo-1515482818126.png\",\n            \"name\": \"Let's Goo Social\",\n            \"rating\": 2.9,\n            \"review_count\": 6,\n            \"salary_count\": 7\n        },\n        {\n            \"company_description\": null,\n            \"company_id\": 5953502,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Goo-Goo-Gaa-Gaa-EI_IE5953502.11,26.htm\",\n            \"company_size\": \"1 to 50 Employees\",\n            \"company_size_category\": \"SMALL\",\n            \"headquarters_location\": \"Brookfield, WI\",\n            \"industry\": null,\n            \"job_count\": 0,\n            \"logo\": null,\n            \"name\": \"Goo Goo Gaa Gaa\",\n            \"rating\": 3,\n            \"review_count\": 1,\n            \"salary_count\": 5\n        },\n        {\n            \"company_description\": \"From our dawning days in 1945 Honolulu, we have pioneered hospitality, tourism and destination design. Independent to this day, we are a global multi-disciplinary design firm specializing in Strategy, Master Planning, Architecture, Landscape and Wimberly Interiors. We are a team of 500 creative, world-traveling professionals designing landmark urban and leisure destinations with eight offices across three continents.\",\n            \"company_id\": 107591,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-WATG-EI_IE107591.11,15.htm\",\n            \"company_size\": \"201 to 500 Employees\",\n            \"company_size_category\": \"MEDIUM\",\n            \"headquarters_location\": \"Irvine, CA\",\n            \"industry\": \"Architectural & Engineering Services\",\n            \"job_count\": 30,\n            \"logo\": \"https://media.glassdoor.com/sql/107591/watg-squarelogo-1543326423910.png\",\n            \"name\": \"WATG\",\n            \"rating\": 3.7,\n            \"review_count\": 172,\n            \"salary_count\": 325\n        },\n        {\n            \"company_description\": null,\n            \"company_id\": 923128,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Goo-Technologies-EI_IE923128.11,27.htm\",\n            \"company_size\": \"1 to 50 Employees\",\n            \"company_size_category\": \"SMALL\",\n            \"headquarters_location\": \"Stockholm, Sweden\",\n            \"industry\": \"Information Technology Support Services\",\n            \"job_count\": 0,\n            \"logo\": null,\n            \"name\": \"Goo Technologies\",\n            \"rating\": 4.5,\n            \"review_count\": 2,\n            \"salary_count\": 4\n        },\n        {\n            \"company_description\": null,\n            \"company_id\": 812843,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Pwi-Di-Goo-Zing-Ne-Yaa-Zhing-Advisory-Services-EI_IE812843.11,57.htm\",\n            \"company_size\": \"201 to 500 Employees\",\n            \"company_size_category\": \"MEDIUM\",\n            \"headquarters_location\": \"Fort Frances, Canada\",\n            \"industry\": \"State & Regional Agencies\",\n            \"job_count\": 0,\n            \"logo\": null,\n            \"name\": \"Pwi-Di-Goo-Zing Ne-Yaa-Zhing Advisory Services\",\n            \"rating\": 3.9,\n            \"review_count\": 3,\n            \"salary_count\": 2\n        },\n        {\n            \"company_description\": null,\n            \"company_id\": 2888762,\n            \"company_link\": \"https://www.glassdoor.com/Overview/Working-at-Dembach-Goo-Informatik-EI_IE2888762.11,33.htm\",\n            \"company_size\": \"1 to 50 Employees\",\n            \"company_size_category\": \"SMALL\",\n            \"headquarters_location\": \"Cologne, Germany\",\n            \"industry\": \"Information Technology Support Services\",\n            \"job_count\": 13,\n            \"logo\": \"https://media.glassdoor.com/sql/2888762/dembach-goo-informatik-squarelogo-1599212755043.png\",\n            \"name\": \"Dembach Goo Informatik\",\n            \"rating\": 4.4,\n            \"review_count\": 2,\n            \"salary_count\": 3\n        }\n    ],\n    \"parameters\": {\n        \"limit\": 10,\n        \"query\": \"goo\"\n    },\n    \"request_id\": \"620f79dd-d90e-40c5-9ae7-0fe8b1ad1d18\",\n    \"status\": \"OK\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:5000",
+			"type": "string"
+		}
+	]
+}
