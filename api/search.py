@@ -48,7 +48,6 @@ def company_search() -> (
     if not companies:
         """Return an empty list if no companies are found for a given query."""
         return "No companies found in the Glassdoor API response."
-    
 
     with open(file_path, mode="w", newline="") as file:
         """Write the data to a CSV file and return it as an HTTP response."""
