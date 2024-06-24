@@ -73,6 +73,92 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "model",
+			"item": [
+				{
+					"name": "predict",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review_count\": 100,\r\n    \"salary_count\": 50,\r\n    \"job_count\": 10,\r\n    \"company_size\": \"high\",\r\n    \"industry\": \"Technology\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/predict/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"predict",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "model example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"review_count\": 100,\r\n    \"salary_count\": 50,\r\n    \"job_count\": 10,\r\n    \"company_size\": \"Medium\",\r\n    \"industry\": \"Technology\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/predict/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"predict",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.3 Python/3.12.1"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 24 Jun 2024 00:36:02 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"predicted_rating\": 4.300000190734863\n}"
+						}
+					]
+				}
+			]
 		}
 	],
 	"event": [
